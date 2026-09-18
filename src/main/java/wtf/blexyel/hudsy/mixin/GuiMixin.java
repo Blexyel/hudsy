@@ -1,4 +1,4 @@
-package wtf.blexyel.simplehud.mixin;
+package wtf.blexyel.hudsy.mixin;
 
 import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.Minecraft;
@@ -11,8 +11,8 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import wtf.blexyel.simplehud.Renderstuff;
-import wtf.blexyel.simplehud.config.Config;
+import wtf.blexyel.hudsy.Renderstuff;
+import wtf.blexyel.hudsy.config.Config;
 
 @Mixin(Gui.class)
 public class GuiMixin {

@@ -1,8 +1,8 @@
-package wtf.blexyel.simplehud;
+package wtf.blexyel.hudsy;
 
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
-import wtf.blexyel.simplehud.config.YACLConfig;
+import wtf.blexyel.hudsy.config.YACLConfig;
 
 public class ModMenu implements ModMenuApi {
   @Override

@@ -1,4 +1,4 @@
-package wtf.blexyel.simplehud.config;
+package wtf.blexyel.hudsy.config;
 
 public enum ConfigEnums {
   // ### START TOGGLES ### //

@@ -1,4 +1,4 @@
-package wtf.blexyel.simplehud.network;
+package wtf.blexyel.hudsy.network;
 
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.codec.ByteBufCodecs;

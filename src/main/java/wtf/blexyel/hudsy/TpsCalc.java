@@ -1,4 +1,4 @@
-package wtf.blexyel.simplehud;
+package wtf.blexyel.hudsy;
 
 public class TpsCalc {
   private static long lastServerWorldTime = -1;

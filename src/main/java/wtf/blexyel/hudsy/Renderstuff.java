@@ -1,4 +1,4 @@
-package wtf.blexyel.simplehud;
+package wtf.blexyel.hudsy;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -10,7 +10,7 @@ import java.util.Set;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.util.Mth;
-import wtf.blexyel.simplehud.config.Config;
+import wtf.blexyel.hudsy.config.Config;
 
 public class Renderstuff {
   public void getEntry(GuiGraphicsExtractor graphics, Minecraft client) {

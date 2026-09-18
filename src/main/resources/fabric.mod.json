@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
-  "id": "simplehud",
+  "id": "hudsy",
   "version": "${version}",
-  "name": "simplehud",
-  "description": "Adds simple HUD, thats it",
+  "name": "hudsy",
+  "description": "Adds HUD, thats it",
   "authors": [
     "Blexyel"
   ],
   "contact": {
-    "homepage": "https://github.com/Blexyel/simplehud"
+    "homepage": "https://github.com/Blexyel/hudsy"
   },
   "license": "GPL-3.0",
-  "icon": "assets/simplehud/icon.png",
+  "icon": "assets/hudsy/icon.png",
   "environment": "client",
   "entrypoints": {
     "main": [
-      "wtf.blexyel.simplehud.Simplehud"
+      "wtf.blexyel.hudsy.Hudsy"
     ],
     "client": [
-      "wtf.blexyel.simplehud.SimplehudClient"
+      "wtf.blexyel.hudsy.HudsyClient"
     ],
     "modmenu": [
-      "wtf.blexyel.simplehud.ModMenu"
+      "wtf.blexyel.hudsy.ModMenu"
     ]
   },
   "mixins": [
-    "simplehud.mixins.json"
+    "hudsy.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.18.6",

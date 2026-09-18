@@ -1,10 +1,10 @@
-package wtf.blexyel.simplehud;
+package wtf.blexyel.hudsy;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.PlayerInfo;
 import net.minecraft.core.BlockPos;
-import wtf.blexyel.simplehud.network.SSUPayloadReceiver;
-import wtf.blexyel.simplehud.network.TpsPayloadReceiver;
+import wtf.blexyel.hudsy.network.SSUPayloadReceiver;
+import wtf.blexyel.hudsy.network.TpsPayloadReceiver;
 
 public class Utils {
 

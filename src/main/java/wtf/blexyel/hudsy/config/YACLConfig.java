@@ -1,4 +1,4 @@
-package wtf.blexyel.simplehud.config;
+package wtf.blexyel.hudsy.config;
 
 import dev.isxander.yacl3.api.ConfigCategory;
 import dev.isxander.yacl3.api.Option;
@@ -17,7 +17,7 @@ public class YACLConfig {
   public static Screen create(Screen parent) {
     Config.HANDLER.load();
     return YetAnotherConfigLib.createBuilder()
-        .title(Component.literal("Simple HUD Config"))
+        .title(Component.literal("Hudsy Config"))
         // ### START TOGGLES ### //
         .category(
             ConfigCategory.createBuilder()

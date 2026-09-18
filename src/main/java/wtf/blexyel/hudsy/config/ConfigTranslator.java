@@ -1,4 +1,4 @@
-package wtf.blexyel.simplehud.config;
+package wtf.blexyel.hudsy.config;
 
 import dev.isxander.yacl3.config.v2.api.SerialEntry;
 import java.lang.reflect.Field;

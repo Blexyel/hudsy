@@ -1,22 +1,42 @@
-package wtf.blexyel.simplehud.config;
+package wtf.blexyel.hudsy.config;
 
 import com.google.gson.GsonBuilder;
 import dev.isxander.yacl3.config.v2.api.ConfigClassHandler;
 import dev.isxander.yacl3.config.v2.api.SerialEntry;
 import dev.isxander.yacl3.config.v2.api.serializer.GsonConfigSerializerBuilder;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.resources.Identifier;
+import wtf.blexyel.hudsy.Hudsy;
 
 public class Config {
   static FabricLoader instance = FabricLoader.getInstance();
 
+  public static void migrate() {
+    Path dirPath = instance.getConfigDir().toAbsolutePath().normalize();
+    Path oldFile = dirPath.resolve("simplehud.json5");
+    Path newFile = dirPath.resolve("hudsy.json5");
+
+    try {
+      if (Files.exists(oldFile)) {
+        Files.move(oldFile, newFile, StandardCopyOption.REPLACE_EXISTING);
+        Hudsy.LOGGER.info("config migrated!");
+      }
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+  }
+
   public static final ConfigClassHandler<Config> HANDLER =
       ConfigClassHandler.createBuilder(Config.class)
-          .id(Identifier.tryParse("simplehud:config"))
+          .id(Identifier.tryParse("hudsy:config"))
           .serializer(
               config ->
                   GsonConfigSerializerBuilder.create(config)
-                      .setPath(instance.getConfigDir().resolve("simplehud.json5"))
+                      .setPath(instance.getConfigDir().resolve("hudsy.json5"))
                       .appendGsonBuilder(GsonBuilder::setPrettyPrinting)
                       .setJson5(true)
                       .build())

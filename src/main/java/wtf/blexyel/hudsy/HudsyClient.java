@@ -1,11 +1,11 @@
-package wtf.blexyel.simplehud;
+package wtf.blexyel.hudsy;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
-import wtf.blexyel.simplehud.network.SSUPayload;
-import wtf.blexyel.simplehud.network.TpsPayload;
+import wtf.blexyel.hudsy.network.SSUPayload;
+import wtf.blexyel.hudsy.network.TpsPayload;
 
-public class SimplehudClient implements ClientModInitializer {
+public class HudsyClient implements ClientModInitializer {
   @Override
   public void onInitializeClient() {
     PayloadTypeRegistry.clientboundPlay().register(TpsPayload.TYPE, TpsPayload.CODEC);

@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "wtf.blexyel.simplehud.mixin",
+  "package": "wtf.blexyel.hudsy.mixin",
   "compatibilityLevel": "JAVA_25",
   "minVersion": "0.8",
   "client": [

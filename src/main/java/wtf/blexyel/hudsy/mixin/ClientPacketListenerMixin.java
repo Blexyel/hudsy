@@ -1,4 +1,4 @@
-package wtf.blexyel.simplehud.mixin;
+package wtf.blexyel.hudsy.mixin;
 
 import net.minecraft.client.multiplayer.ClientPacketListener;
 import net.minecraft.network.protocol.game.ClientboundSetTimePacket;
@@ -6,7 +6,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import wtf.blexyel.simplehud.TpsCalc;
+import wtf.blexyel.hudsy.TpsCalc;
 
 @Mixin(ClientPacketListener.class)
 public class ClientPacketListenerMixin {

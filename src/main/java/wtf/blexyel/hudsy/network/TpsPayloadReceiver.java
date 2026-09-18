@@ -1,4 +1,4 @@
-package wtf.blexyel.simplehud.network;
+package wtf.blexyel.hudsy.network;
 
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 
